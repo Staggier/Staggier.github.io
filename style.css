@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5b549;
+    overflow: auto;
+}
+
+main {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.projecteuler {
+    display: flex;
+    flex-direction: column;
+}
+
+.projecteuler p {
+    padding-left: 100px;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.favorites a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.favorites p {
+    padding-left: 10px;
+}
+
+.favorites li {
+    padding-bottom: 5px;
+}
+
+.schoolwork {
+    padding-top: 20px;
+}
+
+.schoolwork a {
+    font-size: 30px;
+    animation: blinkingText 1s infinite;
+    align-self: center;
+}
+
+.schoolwork div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.profile {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.profile div a {
+    color: inherit;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+@keyframes blinkingText{
+    0%{     color: #000;}
+    50%{    color: transparent; }
+    100%{   color: #000;    }
+}
