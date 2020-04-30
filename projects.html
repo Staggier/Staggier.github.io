@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">    
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+        <div>
+          <img src="https://projecteuler.net/images/levels/level_3.png" alt="Level 3 icon for Project Euler.">
+          <p> Jordan 'Staggier' McIntyre</p>
+          <p> Problems solved: 98</p>
+        </div>
+        <a href="index.html"> Home</a>
+        <a href="projects.html"> Projects</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
+    <main>
+        <p> In this section I will highlight four problems from <a href="https://www.projecteuler.net/">Project Euler</a> that
+            I've solved and found interesting. In reality there are a lot more that are interesting to me, but I'll limit myself to 
+            four problems.</p>
+        <div>
+            <h3> Project Euler #15: Lattice Paths</h3>
+            <img src="assets/LatticePaths.png" srcset="assets/LatticePaths.png 598w, assets/LP449W.png 449w, assets/LP299W.png 299w" alt="Visual Aid for problem description">
+            <p>
+                This problem covers solving for the amount of paths in a 20x20 grid where you start from the top left and end
+                in the bottom right. This one was interesting because the most optimal solution was actually taught in the now
+                removed Math course that was offered in the Computer Science 420-AO program at John Abbott College. It can be
+                solved simply with the equation n Choose r. Which if you remember is (factorial n) / ((factorial r) * (factorial (n - r))).
+            </p>
+        </div>
+        <div>
+            <h3> Project Euler #59: XOR Decryption</h3>
+            <img src="assets/XORDecryption.jpg" srcset="assets/XORDecryption.jpg 1280w, assets/XORD960W 960w, assets/XORD640W 640w" alt="Visual Aid for problem description">
+            <p>
+                This problem covers solving for a 3 character long key and decrypting the given message with it, and then calculating the
+                sum of the ASCII values of the original message. This problem was interesting because shortly after completion the topic of
+                decrypting was further covered in my IT class. If I recall correctly I solved this problem by going through the text with a
+                possible key and matching the created strings to a dictionary of common english words and took the result with the highest amount
+                of matched words.
+            </p>
+        </div>
+        <div>
+            <h3> Project Euler #72: Counting Fractions</h3>
+            <img src="assets/PE072.PNG" srcset="assets/PE072.PNG 1012w, assets/PE072759W 759w, assets/PE072506W 506w">
+            <p>
+                This problem covers finding all distinct fractions k/n from where 2 <= k < n and 2 <= n <= 1,000,000. This problem is interesting
+                because of the solution I found. In the beginning I was a little stuck, unsure how I'd be able to just ignore repeat possibilities. I
+                then started to draw it out and noticed that all you need to do is calculate the summation of Eulter Totients (Phi n) from 2 <= n <= 1,000,000.
+            </p>
+        </div>
+        <div>
+            <h3> Project Euler #96: Sudoku</h3>
+            <img src="assets/Sudoku.png" srcset="assets/Sudoku.png 1200w, assets/S900W.png 900w, assets/S600W.png 600w">
+            <p>
+                This problem covers solving for unsolved Sudoku puzzles and then calculating the summation of the top three digits of each puzzle as 
+                a number. This problem was very interesting to me because I ended having to use an algorithm to solve it. A backtracking algorithm, to
+                be precise. Algorithms are interesting to me, I like optimal solutions.
+            </p>
+        </div>
+        <p> Feel free to check out <a href="https://github.com/Staggier/ProjectEuler">my Github</a> for actual code solutions to some of the first one hundred Project Euler problems!></p>
+    </main>
+  </body>
+</html>
