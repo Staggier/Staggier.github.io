@@ -30,7 +30,6 @@ nav div {
 }
 
 nav div div {
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -70,10 +69,13 @@ nav p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: right;
 }
 
 .hbody main div {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .hbody main div img {
@@ -130,4 +132,34 @@ nav p {
     align-self: center;
     line-height: 1.5em;
     padding: 10px;
+}
+
+.cbody {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "nav" "main";
+    overflow: hidden;
+}
+
+.cbody main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 100px 25% 25% 25%;
+    background-color: #eda547;
+}
+
+.text {
+    height: 20px;
+}
+
+.cbody main input, div {
+    margin: 10px;
+}
+
+.submit {
+    width: 50%;
+    align-self: center;
 }

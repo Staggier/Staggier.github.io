@@ -4,18 +4,22 @@
         <title>Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="cbody">
         <nav>
             <div>
               <img src="https://projecteuler.net/images/levels/level_3.png" alt="Level 3 icon for Project Euler.">
-              <p> Jordan 'Staggier' McIntyre</p>
-              <p> Problems solved: 98</p>
+              <div>
+                <p> Jordan 'Staggier' McIntyre</p>
+                <p> Problems solved: 98</p>
+              </div>
             </div>
-            <a href="index.html"> Home</a>
-            <a href="projects.html"> Projects</a>
-            <a href="contact.html"> Contact</a>
+            <div class="links">
+              <a href="index.html"> Home</a>
+              <a href="projects.html"> Projects</a>
+              <a href="contact.html"> Contact</a>
+            </div>
           </nav>
-        <div>
+        <main>
             <input type="text" value="Full Name">
             <input type="email" value="example@gmail.com">
             <input type="tel" value="123-456-7890">
@@ -34,8 +38,8 @@
                     <option value="Saskatchewan">Saskatchewan</option>
                 </select>
             </div>
-            <input type="text" value="Enter your message!">
-            <input type="submit">
-        </div> 
+            <input class="text" type="text" value="Enter your message!" i>
+            <input class ="submit" type="submit">
+        </main> 
     </body>
 </html>
