@@ -6,7 +6,7 @@
 
 body {
     display: grid;
-    background-color: #f5b549;
+    background-color: #F7B54A;
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -21,7 +21,8 @@ nav {
     display: flex;
     flex-direction: row;
     grid-area: nav;
-    background-color: #e39819;
+    background-color: #462907;
+    color: #BDBDBD;
 }
 
 nav div {
@@ -148,7 +149,6 @@ nav p {
     justify-content: space-between;
     text-align: center;
     margin: 100px 25% 25% 25%;
-    background-color: #eda547;
 }
 
 .text {
