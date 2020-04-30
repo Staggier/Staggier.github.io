@@ -7,9 +7,9 @@
 body {
     display: grid;
     background-color: #f5b549;
-    
+    grid-template-rows: auto auto auto;
 }
 
-nav {
-
+.province {
+    width: 100px;
 }
