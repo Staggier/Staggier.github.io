@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Arial, Helvetica, serif;
+  font-size: large;
+}
+
+.intro {
+  display: grid;
+  grid-template-areas: "img text" "text text";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  margin: 10% 10% 5% 10%;
+  font-family: inherit;
+}
+
+.intro img {
+  width: 75%;
+  border: 2px solid black;
+  grid-area: "img";
+}
+
+.intro p {
+  display: flex;
+  grid-area: "text";
+  align-items: center;
+}
+
+.cstalk p { margin: 7% 15% 5% 15%; }
+
+.cstalk img { 
+  display: block;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer .discord {
+  width: 2%;
+}
+
+.footer .twitter {
+    width: 15%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .item {
+  margin: 0px 0px 0px 0px;
+}
