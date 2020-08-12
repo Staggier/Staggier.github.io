@@ -10,24 +10,18 @@
 }
 
 .intro {
-  display: grid;
-  grid-template-areas: "img text" "text text";
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
   margin: 10% 10% 5% 10%;
   font-family: inherit;
-}
+  align-items: center;
+}  
 
 .intro img {
   width: 75%;
+  height: 75%;
   border: 2px solid black;
-  grid-area: "img";
-}
-
-.intro p {
-  display: flex;
-  grid-area: "text";
-  align-items: center;
+  margin: 0px 0px 20px 0px;
 }
 
 .cstalk p { margin: 7% 15% 5% 15%; }
@@ -41,22 +35,82 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .footer .discord {
-  width: 2%;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .footer .twitter {
-    width: 15%;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .footer a {
   text-decoration: none;
   color: inherit;
+  margin: 0px 10px 0px 5px;
 }
 
 .footer .item {
-  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 500px)
+{
+  .intro {
+    display: initial;
+  }
+
+  .intro img {
+    width: 60%;
+    height: 60%;
+    float: left;
+    margin: 5% 10% 5% 5%;
+  }
+
+  .intro p {
+    display: initial;
+    float: none;
+  }
+
+  .navbar {
+      margin: 10% 0px 0px 0px;
+  }
+
+  .wrapper {
+    margin: 0px 0px 0px 10%;
+  }
+}
+
+@media screen and (min-width: 701px)
+{
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 5% 5%;
+    font-family: inherit;
+    align-items: center;
+  }  
+}
+
+@media screen and (min-width: 1000px)
+{
+  .intro {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 10% 5% 10%;
+    font-family: inherit;
+    align-items: center;
+  }  
+
+  .intro img {
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
+    margin: 0px 50px 0px 0px;
+  }
 }
