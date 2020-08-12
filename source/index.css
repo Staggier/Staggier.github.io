@@ -35,28 +35,16 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 
-.footer .discord {
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.footer .twitter {
-  width: 1.5em;
-  height: 1.5em;
+.footer img {
+  width: 1.5rem;
 }
 
 .footer a {
   text-decoration: none;
   color: inherit;
   margin: 0px 10px 0px 5px;
-}
-
-.footer .item {
-  display: flex;
-  flex-direction: row;
 }
 
 @media screen and (min-width: 500px)
